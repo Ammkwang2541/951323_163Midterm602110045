@@ -18,7 +18,7 @@ public class GameApplicationManager : MonoBehaviour
         }
     }
     static protected GameApplicationManager _singletonInstance = null;
-    public string[] DIFFICULTY_LEVEL_NAMES = { "Easy", "Normal", "Hard", "Extreme" };
+   
     public bool IsOptionMenuActive
     {
         get { return _isOptionMenuActive; }

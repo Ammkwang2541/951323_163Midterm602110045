@@ -19,7 +19,7 @@ public class MainMenuControlScript : MonoBehaviour
     }
     public void StartButtonClick(Button button)
     {
-        SceneManager.LoadScene("SceneGameplay");
+        SceneManager.LoadScene("SceneGame");
     }
     public void OptionsButtonClick(Button button)
     {

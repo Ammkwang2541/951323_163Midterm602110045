@@ -56,11 +56,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Magic Spell Pack\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-     <Compile Include="Assets\Magic Spell Pack\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
-     <Compile Include="Assets\Magic Spell Pack\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
-     <Compile Include="Assets\Magic Spell Pack\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
-     <Compile Include="Assets\Magic Spell Pack\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
-     <Compile Include="Assets\Magic Spell Pack\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -643,8 +638,23 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProGrids">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids.Editor">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -661,35 +671,34 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ProBuilder">
- <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProGrids">
- <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProGrids.Editor">
- <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/CAMT/Desktop/mid/midterm602110045/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{D63F0E60-137B-1AF4-5173-399CF7CCC1FB}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{6AB678A7-06FE-42F9-9E22-965F34574250}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{5640BD8E-408E-FD42-8BD2-676A20F31238}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

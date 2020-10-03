@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class OptionsMenuControlScript : MonoBehaviour
 {
-    [SerializeField] Dropdown _dropdownDifficulty;
+   
     [SerializeField] Toggle _toggleMusic;
     [SerializeField] Toggle _toggleSFX;
     [SerializeField] Button _backButton;
     // Start is called before the first frame update
     void Start()
     {
-        _dropdownDifficulty.value = GameApplicationManager.Instance.DifficultyLevel;
+       
         _toggleMusic.isOn = GameApplicationManager.Instance._isMusicEnabled;
         _toggleSFX.isOn = GameApplicationManager.Instance.SFXEnabled;
-        _dropdownDifficulty.onValueChanged.AddListener(delegate{DropdownDifficultyChanged(_dropdownDifficulty);});
+        
         _toggleMusic.onValueChanged.AddListener(delegate { OnToggleMusic(_toggleMusic); });
         _toggleSFX.onValueChanged.AddListener(delegate { OnToggleSFX(_toggleSFX); });
         _backButton.onClick.AddListener(delegate { BackButtonClick(_backButton); });
@@ -32,10 +32,7 @@ public class OptionsMenuControlScript : MonoBehaviour
         SceneManager.UnloadSceneAsync("SceneOptions");
         GameApplicationManager.Instance.IsOptionMenuActive = false;
     }
-    public void DropdownDifficultyChanged(Dropdown dropdown)
-    {
-        GameApplicationManager.Instance.DifficultyLevel = dropdown.value;
-    }
+    
     public void OnToggleMusic(Toggle toggle)
     {
         GameApplicationManager.Instance._isMusicEnabled = _toggleMusic.isOn;
